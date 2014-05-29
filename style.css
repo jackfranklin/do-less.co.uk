@@ -279,7 +279,7 @@ body {
 
 .book-link-line { display: block; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-device-width: 900px) {
   .up.workshop {
     min-height: 200px;
   }
