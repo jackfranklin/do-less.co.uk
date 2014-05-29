@@ -305,6 +305,7 @@ screen and (max-width: 900px) {
   }
   .wk.title {
     left: 60px;
+    font-size: 20px;
   }
   .wk.time {
     display: none;
