@@ -279,7 +279,8 @@ body {
 
 .book-link-line { display: block; }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 900px),
+screen and (max-width: 900px) {
   .up.workshop {
     min-height: 200px;
   }
@@ -300,7 +301,7 @@ body {
     left: 60px;
     position: relative;
     top: auto;
-    width: 80%;
+    width: 90%;
   }
   .wk.title {
     left: 60px;
@@ -311,7 +312,7 @@ body {
   .wk.book {
     position: static;
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 10px 0 0 60px;
   }
   .book-link-line { display: inline; }
