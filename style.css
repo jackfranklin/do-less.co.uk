@@ -75,7 +75,8 @@ body {
 }
 
 .bl.desc {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   margin: 10px auto;
   color: #fff;
   text-align: center;
@@ -103,7 +104,8 @@ body {
 
 
 .up.workshop {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   padding-bottom: 20px;
   margin: 20px auto;
   position: relative;
@@ -129,7 +131,6 @@ body {
   position: relative;
 }
 
-
 .date {
   position: absolute;
   font-family: Montserrat;
@@ -150,6 +151,9 @@ body {
   font-size: 23px;
   text-transform: uppercase;
 }
+
+
+
 
 
 .wk.title, .wk.time {
@@ -272,3 +276,48 @@ body {
   text-decoration: underline;
   color: #000;
 }
+
+.book-link-line { display: block; }
+
+@media all and (max-width: 900px) {
+  .up.workshop {
+    min-height: 200px;
+  }
+
+  .up.cal {
+    width: 50px;
+    height: 50px;
+  }
+  .date.day {
+    font-size: 14px;
+    top: 25px;
+  }
+  .date.month {
+    font-size: 14px;
+    top: 10px;
+  }
+  .wk.desc {
+    left: 60px;
+    position: relative;
+    top: auto;
+    width: 80%;
+  }
+  .wk.title {
+    left: 60px;
+  }
+  .wk.time {
+    display: none;
+  }
+  .wk.book {
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 10px 0 0 60px;
+  }
+  .book-link-line { display: inline; }
+  .a.desc {
+    width: 80%;
+  }
+  .footer { width: 100%; }
+}
+
