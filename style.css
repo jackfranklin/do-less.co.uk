@@ -261,6 +261,19 @@ body {
 }
 
 
+.a.and {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+  font-family:Muli, Arial, Helvetica;
+  font-size: 60px;
+}
+
+
+
+
+
 .footer {
   width: 1000px;
   margin: 10px auto;
