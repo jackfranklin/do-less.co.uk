@@ -92,7 +92,7 @@ body {
   min-height: 200px;
 }
 
-.up.title {
+.up.title, .ab.title {
   width: 100%;
   text-align: center;
   font-family: Muli, Arial, Helvetica;
@@ -101,7 +101,27 @@ body {
   padding: 30px 0 0 0;
 }
 
-
+.about {
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+.ab.list {
+  width: 75%;
+  margin: 10px auto;
+}
+.ab.list li {
+  font-family: Muli, Arial, Helvetica;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.ab.list li strong {
+  font-style: bold;
+  font-family: Montserrat;
+  display: block;
+}
 
 .up.workshop {
   width: 100%;
@@ -151,9 +171,6 @@ body {
   font-size: 23px;
   text-transform: uppercase;
 }
-
-
-
 
 
 .wk.title, .wk.time {
