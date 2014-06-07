@@ -4,15 +4,22 @@
 
 // the welcome section
 .wc
-  position: absolute
-  top: 0
+  position: relative
   width: 100%
-  height: 105%
+  height: 840px
   background: url(./../img/workshop.png) no-repeat center center
   background-size: cover
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
+  @media (min-height: 1000px)
+    height: 1100px
+  @media (max-height: 650px)
+    height: 680px
+  @media (max-height: 568px)
+    height: 580px
+  @media (max-height: 340px)
+    height: 360px
 
 
 .wc-slogan
@@ -25,52 +32,73 @@
   text-align: center
   border-radius: 3px
   padding: 20px 0
+  @media (max-width: 580px)
+    width: 460px
+    font-size: 22px
+  @media (max-width: 480px)
+    width: 320px
+    font-size: 16px
 
 
 
-// the about workshop section
 .ab
   width: 100%
   box-sizing: border-box
-  height: 230px
-  padding: 40px 0
-  top: 105%
-  position: absolute
+  padding: 40px 10px
+  float: left
 
 .ab-inner
-  width: 1000px
+  box-sizing: border-box
+  width: 100%
   text-align: center
-  margin: 0 auto
+  @media (min-width: 1000px)
+    width: 1000px
+    margin: 0 auto
+  @media (max-width: 450px)
+    font-size: 18px
+
+.ab-uw
+  @media (max-width: 450px)
+    font-size: 22px
+
+.ab-chevron
+  @media (max-width: 450px)
+    font-size: 35px
+
+
+
 
 
 .ws
   width: 100%
   box-sizing: border-box
-  height: 290px
-  position: absolute
+  float: left
   padding: 40px 0
-
-.ws.first
-  top: calc(105% + 230px)
-  top: -webkit-calc(105% + 230px)
-
-.ws.second
-  top: calc(105% + 520px)
-  top: -webkit-calc(105% + 520px)
-
-.ws.third
-  top: calc(105% + 810px)
-  top: -webkit-calc(105% + 810px)
-  height: 310px
+  @media (max-width: 650px)
+    padding: 20px 0
 
 .ws-inner
+  box-sizing: border-box
   position: relative
   width: 900px
   height: 200px
   margin: 0 auto
+  @media (max-width: 920px)
+    width: 100%
+    height: 250px
+  @media (max-width: 650px)
+    height: 240px
+  @media (max-width: 450px)
+    height: 270px
 
 .third .ws-inner
   height: 220px
+  @media (max-width: 800px)
+    height: 290px
+  @media (max-width: 650px)
+    height: 300px
+  @media (max-width: 450px)
+    height: 280px
 
 .ws-date
   position: absolute
@@ -80,12 +108,22 @@
   width: 160px
   height: 100px
   text-transform: uppercase
+  @media (max-width: 650px)
+    left: -20px
 
 .ws-desc
   position: absolute
   top: 0
   left: 170px
   right: 0
+  @media (max-width: 650px)
+    line-height: 22px
+    font-size: 14px
+    left: 130px
+    right: 10px
+  @media (max-width: 450px)
+    line-height: 18px
+    left: 115px
 
 .ws-info
   display: block
@@ -102,20 +140,20 @@
 
 .fd
   background-color: #EFF1F5
-  height: 340px
   width: 100%
-  position: absolute
-  top: -webkit-calc(105% + 1120px)
-  top: calc(105% + 1120px)
+  float: left
   padding: 40px 0
   box-sizing: border-box
+  @media (max-width: 650px)
+    padding: 20px 10px
 
 
 .fd-inner
   position: relative
-  width: 1000px
-  height: 260px
-  margin: 0 auto
+  width: 100%
+  @media (min-width: 1000px)
+    width: 1000px
+    margin: 0 auto
 
 .fd-title
   width: 100%
@@ -133,7 +171,6 @@
 .fd-member
   float: left
   width: 100%
-  height: 180px
   margin: 20px 0 0 0
 
 .fd-member .img
@@ -142,35 +179,43 @@
   width: 160px
   height: 180px
   border-radius: 3px
+  @media (max-width: 650px)
+    width: 120px
+    height: 140px
 
 .fd-member .img.second
   margin-left: 15px
+  @media (max-width: 650px)
+    margin-left: 0px
 
 
 .fd-member .desc
   float: left
   margin-left: 10px
   width: 320px
+  @media (max-width: 800px)
+    width: 200px
+  @media (max-width: 650px)
+    width: 440px
+    font-size: 14px
+    line-height: 21px
+  @media (max-width: 450px)
+    width: 230px
+    font-size: 12px
+    line-height: 16px
 
 
-//1460
 .ft
-  position: absolute
   width: 100%
-  height: 100px
-  top: -webkit-calc(105% + 1460px)
-  top: calc(105% + 1460px)
-
-.ft-inner
-  width: 1000px
-  margin: 0 auto
-  height: 100px
-  line-height: 100px
-
-
-.ft-copy
   float: left
 
+.ft-inner
+  width: 100%
+  padding: 40px 0
+  line-height: 20px
+  text-align: center
+  @media (max-width: 650px)
+    padding: 20px 0
 
-.ft-designer
-  float: right
+
+
