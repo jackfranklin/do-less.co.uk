@@ -79,60 +79,40 @@
 
 .ws-inner
   box-sizing: border-box
-  position: relative
   width: 900px
-  height: 200px
   margin: 0 auto
   @media (max-width: 920px)
-    width: 100%
-    height: 250px
+    width: 90%
   @media (max-width: 650px)
-    height: 240px
   @media (max-width: 450px)
-    height: 270px
-
-.third .ws-inner
-  height: 220px
-  @media (max-width: 800px)
-    height: 290px
-  @media (max-width: 650px)
-    height: 300px
-  @media (max-width: 450px)
-    height: 280px
 
 .ws-date
-  position: absolute
-  top: 40px
-  left: 0
+  float: left
+  margin-top: 25px
   text-align: center
-  width: 160px
+  width: 19%
   height: 100px
   text-transform: uppercase
   @media (max-width: 650px)
     left: -20px
 
 .ws-desc
-  position: absolute
+  float: right
+  width: 80%
   top: 0
   left: 170px
   right: 0
+  margin-bottom: 10px
   @media (max-width: 650px)
-    line-height: 22px
     font-size: 14px
-    left: 130px
-    right: 10px
   @media (max-width: 450px)
-    line-height: 18px
-    left: 115px
 
 .ws-info
   display: block
-  position: absolute
+  clear: both
   bottom: 0
   border: 2px solid $white
   padding: 10px
-  left: 0
-  right: 0
   text-align: center
   text-decoration: none
   border-radius: 5px
