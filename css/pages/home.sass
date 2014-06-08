@@ -164,41 +164,45 @@
   width: 100%
   margin: 20px 0 0 0
 
+.fd-individual
+  width: 48%
+  float: left
+  @media (max-width: 650px)
+    width: 100%
+    float: none
+
+
+.fd-individual.second-individual
+  margin-left: 2%
+  @media (max-width: 650px)
+    margin-left: 0
+    margin-top: 20px
+
 .fd-member .img
   float: left
   border: 1px solid $white
-  width: 160px
-  height: 180px
+  width: 30%
+  max-width: 160px
+  max-height: 180px
   border-radius: 3px
   @media (max-width: 650px)
-    width: 120px
-    height: 140px
-  @media (max-width: 320px)
-    width: 80px
-    height: 100px
-
-.fd-member .img.second
-  margin-left: 15px
-  @media (max-width: 650px)
-    margin-left: 0px
+    display: none
 
 
 .fd-member .desc
   float: left
-  margin-left: 10px
-  width: 320px
-  @media (max-width: 800px)
-    width: 200px
+  margin-left: 5%
+  width: 60%
   @media (max-width: 650px)
-    width: 440px
     font-size: 14px
     line-height: 21px
+    float: none
+    width: 100%
+    margin-left: 0
   @media (max-width: 450px)
-    width: 230px
     font-size: 12px
     line-height: 16px
   @media (max-width: 320px)
-    width: 180px
     font-size: 12px
     line-height: 16px
 
